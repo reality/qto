@@ -25,6 +25,10 @@ import org.semanticweb.owlapi.search.*
 import org.semanticweb.owlapi.manchestersyntax.renderer.*
 import org.semanticweb.owlapi.reasoner.structural.*
 import java.util.regex.Pattern
+import java.util.concurrent.*
+import java.util.concurrent.atomic.*
+import groovyx.gpars.*
+import org.codehaus.gpars.*
 
 def and = { cl1, cl2 ->
   fac.getOWLObjectIntersectionOf(cl1,cl2)
@@ -78,10 +82,10 @@ fac = manager.getOWLDataFactory()
 
 def ont = manager.createOntology(IRI.create("http://biohackathon.org/covid19/cmo-ext.owl"))
 
-def cmo = manager.loadOntologyFromOntologyDocument(new File("cmo.owl"))
-def uberon = manager.loadOntologyFromOntologyDocument(new File("uberon.owl"))
-def chebi = manager.loadOntologyFromOntologyDocument(new File("chebi.owl"))
-def pato = manager.loadOntologyFromOntologyDocument(new File("pato.owl"))
+def cmo = manager.loadOntologyFromOntologyDocument(new File("inputs/cmo.owl"))
+def uberon = manager.loadOntologyFromOntologyDocument(new File("inputs/uberon.owl"))
+def chebi = manager.loadOntologyFromOntologyDocument(new File("inputs/chebi.owl"))
+def pato = manager.loadOntologyFromOntologyDocument(new File("inputs/pato.owl"))
 
 // ConsoleProgressMonitor progressMonitor = new ConsoleProgressMonitor()
 // OWLReasonerConfiguration config = new SimpleConfiguration(progressMonitor)
@@ -101,57 +105,55 @@ def cmo2uberon = [:].withDefault { new LinkedHashSet() }
 def cmo2pato = [:].withDefault { new LinkedHashSet() }
 def cmo2chebi = [:].withDefault { new LinkedHashSet() }
 
-cmolabels.each { cl, lab ->
+GParsPool.withPool(6) {
+cmolabels.eachParallel { cl, lab ->
   uberonlabels.each { k, v ->
     v = Pattern.quote(v)
-    if (lab=~/(^|\s)${v}($|\s)/) {
-      println "$lab\t$k\t$cl"
+    if(lab=~/(^|\s)${v}($|\s)/) {
+      //println "$lab\t$k\t$cl"
       cmo2other[cl].add(k)
       cmo2uberon[cl].add(k)
     }
   }
   patolabels.each { k, v ->
     v = Pattern.quote(v)
-    if (lab=~/(^|\s)${v}($|\s)/) {
-      println "$lab\t$k\t$cl"
+    if(lab=~/(^|\s)${v}($|\s)/) {
+      //println "$lab\t$k\t$cl"
       cmo2other[cl].add(k)
       cmo2pato[cl].add(k)
     }
   }
   chebilabels.each { k, v ->
     v = Pattern.quote(v)
-    if (lab=~/(^|\s)${v}($|\s)/) { 
-      println "$lab\t$k\t$cl" 
+    if(lab=~/(^|\s)${v}($|\s)/) { 
+      //println "$lab\t$k\t$cl" 
       cmo2other[cl].add(k)
       cmo2chebi[cl].add(k)
     }
   }
+}
 }
 
 def cCount = 0
 def aCount = 0
 
 cmo.getClassesInSignature(true).each { k ->
-  def addedAxiom
-  if(cmo2uberon[k] != null) {
-    v = cmo2uberon[k]
-    v.each { cl ->
-      manager.addAxiom(ont, subclass(k, some(r("has-part"), and(c("quality"), some(r("inheres-in-part-of"), cl)))))
-    }
-    addedAxiom = true
-  }
-  if(cmo2uberon[k] != null && cmo2pato[k] != null) {
-    v1 = cmo2uberon[k]
-    v2 = cmo2pato[k]
-    v1.each { cl1 ->
-      v2.each { cl2 ->
-        manager.addAxiom(ont, subclass(k, some(r("has-part"), and(cl2, some(r("inheres-in"), cl1)))))
-      }
-    }
-    addedAxiom = true
+  v = cmo2uberon[k]
+  v.each { cl ->
+    manager.addAxiom(ont, subclass(k, some(r("has-part"), and(c("quality"), some(r("inheres-in-part-of"), cl)))))
   }
 
-  if(addedAxiom) { aCount++ }
+  v1 = cmo2uberon[k]
+  v2 = cmo2pato[k]
+  v1.each { cl1 ->
+    v2.each { cl2 ->
+      manager.addAxiom(ont, subclass(k, some(r("has-part"), and(cl2, some(r("inheres-in"), cl1)))))
+    }
+  }
+
+  if(cmo2uberon[k].size() > 0 || (cmo2uberon[k].size() > 0 && cmo2pato[k].size() > 0)) {
+    aCount++
+  }
   cCount++
 }
 
