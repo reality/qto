@@ -1,0 +1,679 @@
+id	label	match quality	termid	cmo label
+22434	Abdominal fat ratio	2	<http://purl.obolibrary.org/obo/CMO_0000088>	abdominal fat pad weight
+22408	Abdominal subcutaneous adipose tissue volume (ASAT)	2	N/A	N/A
+22405	Anterior thigh lean muscle volume (left)	2	N/A	N/A
+22403	Anterior thigh lean muscle volume (right)	2	N/A	N/A
+22436	Liver proton density fat fraction (AMRA)	1	N/A	N/A
+22435	Muscle fat infiltration	1	N/A	N/A
+22406	Posterior thigh lean muscle volume (left)	2	N/A	N/A
+22404	Posterior thigh lean muscle volume (right)	2	N/A	N/A
+22415	Total adipose tissue volume	2	<http://purl.obolibrary.org/obo/CMO_0000484>	adipose tissue composition measurement
+22416	Total lean tissue volume	3	<http://purl.obolibrary.org/obo/CMO_0002185>	lean tissue volume
+22409	Total thigh muscle volume	2	<http://purl.obolibrary.org/obo/CMO_0000213>	intramuscular fat cell count to skeletal muscle volume ratio
+22410	Total trunk fat volume	2	<http://purl.obolibrary.org/obo/CMO_0002180>	body fat volume
+22407	Visceral adipose tissue volume (VAT)	2	N/A	N/A
+22433	Weight-to-muscle ratio	1	<http://purl.obolibrary.org/obo/CMO_0000020>	waist to hip ratio whr
+90012	Overall acceleration average	1	N/A	N/A
+90013	Standard deviation of acceleration	1	N/A	N/A
+90173	Calibration - maximum x stationary value	1	N/A	N/A
+90175	Calibration - maximum y stationary value	1	N/A	N/A
+90177	Calibration - maximum z stationary value	1	N/A	N/A
+90172	Calibration - minimum x stationary value	1	N/A	N/A
+90174	Calibration - minimum y stationary value	1	N/A	N/A
+90176	Calibration - minimum z stationary value	1	N/A	N/A
+90170	Calibration coefficients - mean temperature	1	N/A	N/A
+90161	Calibration coefficients - x offset	1	N/A	N/A
+90164	Calibration coefficients - x slope	1	N/A	N/A
+90167	Calibration coefficients - x temp	1	N/A	N/A
+90162	Calibration coefficients - y offset	0	N/A	N/A
+90165	Calibration coefficients - y slope	1	N/A	N/A
+90168	Calibration coefficients - y temp	0	N/A	N/A
+90163	Calibration coefficients - z offset	0	N/A	N/A
+90166	Calibration coefficients - z slope	1	N/A	N/A
+90169	Calibration coefficients - z temp	0	N/A	N/A
+90160	Error tolerance after calibration	1	N/A	N/A
+90159	Error tolerance before calibration	1	N/A	N/A
+21021	Pulse wave Arterial Stiffness index	1	N/A	N/A
+4207	Pulse wave velocity (manual entry)	2	N/A	N/A
+5156	3mm asymmetry index (left)	1	N/A	N/A
+5159	3mm asymmetry index (right)	1	N/A	N/A
+5119	3mm cylindrical power (left)	1	N/A	N/A
+5116	3mm cylindrical power (right)	1	N/A	N/A
+5163	3mm regularity index (left)	1	N/A	N/A
+5160	3mm regularity index (right)	1	N/A	N/A
+5135	3mm strong meridian (left)	1	N/A	N/A
+5132	3mm strong meridian (right)	1	N/A	N/A
+5096	3mm weak meridian (left)	1	N/A	N/A
+5099	3mm weak meridian (right)	1	N/A	N/A
+5157	6mm asymmetry index (left)	1	N/A	N/A
+5158	6mm asymmetry index (right)	1	N/A	N/A
+5118	6mm cylindrical power (left)	1	N/A	N/A
+5117	6mm cylindrical power (right)	1	N/A	N/A
+5162	6mm regularity index (left)	1	N/A	N/A
+5161	6mm regularity index (right)	1	N/A	N/A
+5134	6mm strong meridian (left)	1	N/A	N/A
+5133	6mm strong meridian (right)	1	N/A	N/A
+5097	6mm weak meridian (left)	1	N/A	N/A
+5098	6mm weak meridian (right)	1	N/A	N/A
+5086	Cylindrical power (left)	1	N/A	N/A
+5087	Cylindrical power (right)	1	N/A	N/A
+5085	Spherical power (left)	1	N/A	N/A
+5084	Spherical power (right)	1	N/A	N/A
+5274	Vertex distance (left)	1	N/A	N/A
+5215	Vertex distance (right)	1	N/A	N/A
+30620	Alanine aminotransferase	2	<http://purl.obolibrary.org/obo/CMO_0000044>	plasma alanine aminotransferase activity level
+30600	Albumin	1	<http://purl.obolibrary.org/obo/CMO_0000056>	plasma albumin level
+30610	Alkaline phosphatase	2	<http://purl.obolibrary.org/obo/CMO_0000045>	plasma alkaline phosphatase activity level
+30630	Apolipoprotein A	2	<http://purl.obolibrary.org/obo/CMO_0000519>	blood apolipoprotein a level
+30640	Apolipoprotein B	2	<http://purl.obolibrary.org/obo/CMO_0000524>	blood apolipoprotein ai to apolipoprotein b ratio
+30650	Aspartate aminotransferase	2	<http://purl.obolibrary.org/obo/CMO_0000043>	plasma aspartate aminotransferase activity level
+30710	C-reactive protein	1	<http://purl.obolibrary.org/obo/CMO_0000028>	blood protein measurement
+30680	Calcium	1	<http://purl.obolibrary.org/obo/CMO_0000065>	plasma calcium level
+30690	Cholesterol	1	<http://purl.obolibrary.org/obo/CMO_0000051>	blood total cholesterol level
+30700	Creatinine	1	<http://purl.obolibrary.org/obo/CMO_0000057>	serum creatinine level
+30720	Cystatin C	2	<http://purl.obolibrary.org/obo/CMO_0002777>	blood cystatin c level
+30660	Direct bilirubin	1	<http://purl.obolibrary.org/obo/CMO_0000047>	indirect plasma bilirubin level
+30730	Gamma glutamyltransferase	1	<http://purl.obolibrary.org/obo/CMO_0002121>	mononuclear cell interferon gamma secretion
+30740	Glucose	1	<http://purl.obolibrary.org/obo/CMO_0000042>	plasma glucose level
+30750	Glycated haemoglobin (HbA1c)	1	N/A	N/A
+30760	HDL cholesterol	1	<http://purl.obolibrary.org/obo/CMO_0000051>	blood total cholesterol level
+30770	IGF-1	0	N/A	N/A
+30780	LDL direct	1	<http://purl.obolibrary.org/obo/CMO_0000048>	direct plasma bilirubin level
+30790	Lipoprotein A	1	<http://purl.obolibrary.org/obo/CMO_0000052>	blood high density lipoprotein cholesterol level
+30800	Oestradiol	0	N/A	N/A
+30810	Phosphate	1	<http://purl.obolibrary.org/obo/CMO_0000058>	plasma phosphate level
+30820	Rheumatoid factor	2	<http://purl.obolibrary.org/obo/CMO_0002111>	serum immunoglobulin mtype rheumatoid factor level relative to an arbitrary reference serum
+30830	SHBG	0	N/A	N/A
+30850	Testosterone	1	<http://purl.obolibrary.org/obo/CMO_0000512>	blood testosterone level
+30840	Total bilirubin	1	<http://purl.obolibrary.org/obo/CMO_0000047>	indirect plasma bilirubin level
+30860	Total protein	2	<http://purl.obolibrary.org/obo/CMO_0000054>	plasma total protein level
+30870	Triglycerides	0	N/A	N/A
+30880	Urate	0	N/A	N/A
+30670	Urea	1	<http://purl.obolibrary.org/obo/CMO_0000049>	blood urea nitrogen level
+30890	Vitamin D	1	<http://purl.obolibrary.org/obo/CMO_0000844>	milk vitamin measurement
+30160	Basophill count	1	<http://purl.obolibrary.org/obo/CMO_0000024>	calculated differential white blood cell count
+30220	Basophill percentage	1	<http://purl.obolibrary.org/obo/CMO_0000075>	heart weight as percentage of body weight
+30150	Eosinophill count	1	<http://purl.obolibrary.org/obo/CMO_0000024>	calculated differential white blood cell count
+30210	Eosinophill percentage	1	<http://purl.obolibrary.org/obo/CMO_0000075>	heart weight as percentage of body weight
+30030	Haematocrit percentage	1	<http://purl.obolibrary.org/obo/CMO_0000075>	heart weight as percentage of body weight
+30020	Haemoglobin concentration	1	<http://purl.obolibrary.org/obo/CMO_0000291>	mean corpuscular hemoglobin concentration
+30300	High light scatter reticulocyte count	2	N/A	N/A
+30290	High light scatter reticulocyte percentage	1	N/A	N/A
+30280	Immature reticulocyte fraction	1	N/A	N/A
+30120	Lymphocyte count	2	<http://purl.obolibrary.org/obo/CMO_0000031>	blood lymphocyte count
+30180	Lymphocyte percentage	1	<http://purl.obolibrary.org/obo/CMO_0000031>	blood lymphocyte count
+30050	Mean corpuscular haemoglobin	2	<http://purl.obolibrary.org/obo/CMO_0000038>	mean corpuscular volume
+30060	Mean corpuscular haemoglobin concentration	2	<http://purl.obolibrary.org/obo/CMO_0000038>	mean corpuscular volume
+30040	Mean corpuscular volume	3	<http://purl.obolibrary.org/obo/CMO_0000038>	mean corpuscular volume
+30130	Monocyte count	2	<http://purl.obolibrary.org/obo/CMO_0000032>	blood monocyte count
+30190	Monocyte percentage	1	<http://purl.obolibrary.org/obo/CMO_0000032>	blood monocyte count
+30140	Neutrophill count	1	<http://purl.obolibrary.org/obo/CMO_0000024>	calculated differential white blood cell count
+30200	Neutrophill percentage	1	<http://purl.obolibrary.org/obo/CMO_0000075>	heart weight as percentage of body weight
+30170	Nucleated red blood cell count	4	<http://purl.obolibrary.org/obo/CMO_0000025>	red blood cell count
+30230	Nucleated red blood cell percentage	3	<http://purl.obolibrary.org/obo/CMO_0000025>	red blood cell count
+30080	Platelet count	2	<http://purl.obolibrary.org/obo/CMO_0000029>	platelet count
+30090	Platelet crit	1	<http://purl.obolibrary.org/obo/CMO_0000029>	platelet count
+30110	Platelet distribution width	3	<http://purl.obolibrary.org/obo/CMO_0001350>	platelet distribution width
+30010	Red blood cell (erythrocyte) count	3	<http://purl.obolibrary.org/obo/CMO_0000025>	red blood cell count
+30070	Red blood cell (erythrocyte) distribution width	3	<http://purl.obolibrary.org/obo/CMO_0000025>	red blood cell count
+30250	Reticulocyte count	2	<http://purl.obolibrary.org/obo/CMO_0003020>	total reticulocyte count
+30240	Reticulocyte percentage	1	<http://purl.obolibrary.org/obo/CMO_0000075>	heart weight as percentage of body weight
+30000	White blood cell (leukocyte) count	3	<http://purl.obolibrary.org/obo/CMO_0000024>	calculated differential white blood cell count
+23247	Android tissue fat percentage	2	<http://purl.obolibrary.org/obo/CMO_0000226>	body fat percentage lukaski equation
+23248	Android total mass	1	N/A	N/A
+23251	Arm tissue fat percentage (left)	2	N/A	N/A
+23255	Arm tissue fat percentage (right)	2	N/A	N/A
+23252	Arm total mass (left)	1	N/A	N/A
+23256	Arm total mass (right)	1	N/A	N/A
+23259	Arms tissue fat percentage	2	<http://purl.obolibrary.org/obo/CMO_0000226>	body fat percentage lukaski equation
+23260	Arms total mass	1	N/A	N/A
+23264	Gynoid tissue fat percentage	2	<http://purl.obolibrary.org/obo/CMO_0000226>	body fat percentage lukaski equation
+23265	Gynoid total mass	1	N/A	N/A
+23268	Leg tissue fat percentage (left)	2	N/A	N/A
+23272	Leg tissue fat percentage (right)	2	N/A	N/A
+23269	Leg total mass (left)	1	N/A	N/A
+23273	Leg total mass (right)	1	N/A	N/A
+23276	Legs tissue fat percentage	2	<http://purl.obolibrary.org/obo/CMO_0000226>	body fat percentage lukaski equation
+23277	Legs total mass	1	N/A	N/A
+23283	Total mass	1	<http://purl.obolibrary.org/obo/CMO_0000051>	blood total cholesterol level
+23281	Total tissue fat percentage	2	<http://purl.obolibrary.org/obo/CMO_0000226>	body fat percentage lukaski equation
+23286	Trunk tissue fat percentage	2	<http://purl.obolibrary.org/obo/CMO_0000226>	body fat percentage lukaski equation
+23287	Trunk total mass	1	N/A	N/A
+21001	Body mass index (BMI)	4	<http://purl.obolibrary.org/obo/CMO_0000105>	body mass index bmi
+49	Hip circumference	2	<http://purl.obolibrary.org/obo/CMO_0000014>	hip circumference
+51	Seated height	1	<http://purl.obolibrary.org/obo/CMO_0000106>	body height
+20015	Sitting height	1	<http://purl.obolibrary.org/obo/CMO_0000106>	body height
+50	Standing height	1	<http://purl.obolibrary.org/obo/CMO_0000106>	body height
+21002	Weight	1	<http://purl.obolibrary.org/obo/CMO_0000012>	body weight
+3160	Weight, manual entry	1	N/A	N/A
+23220	Arm BMC (bone mineral content) (left)	3	<http://purl.obolibrary.org/obo/CMO_0001554>	bone mineral content
+23222	Arm BMC (bone mineral content) (right)	3	<http://purl.obolibrary.org/obo/CMO_0001554>	bone mineral content
+23221	Arm BMD (bone mineral density) (left)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+23223	Arm BMD (bone mineral density) (right)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+23313	Arm bone area (left)	2	<http://purl.obolibrary.org/obo/CMO_0001681>	bone area measurement
+23314	Arm bone area (right)	2	<http://purl.obolibrary.org/obo/CMO_0001681>	bone area measurement
+23224	Arms BMC (bone mineral content)	3	<http://purl.obolibrary.org/obo/CMO_0001554>	bone mineral content
+23225	Arms BMD (bone mineral density)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+23317	Arms combined bone area	2	<http://purl.obolibrary.org/obo/CMO_0001681>	bone area measurement
+23302	Femur lower neck BMD (bone mineral density) (left)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+23206	Femur lower neck BMD (bone mineral density) (right)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+23294	Femur lower neck BMD (bone mineral density) T-score (left)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+23207	Femur lower neck BMD (bone mineral density) T-score (right)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+23299	Femur neck BMD (bone mineral density) (left)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+23208	Femur neck BMD (bone mineral density) (right)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+23300	Femur neck BMD (bone mineral density) T-score (left)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+23209	Femur neck BMD (bone mineral density) T-score (right)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+23290	Femur shaft BMD (bone mineral density) (left)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+23210	Femur shaft BMD (bone mineral density) (right)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+23303	Femur shaft BMD (bone mineral density) T-score (left)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+23211	Femur shaft BMD (bone mineral density) T-score (right)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+23291	Femur total BMD (bone mineral density) (left)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+23212	Femur total BMD (bone mineral density) (right)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+23293	Femur total BMD (bone mineral density) T-score (left)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+23213	Femur total BMD (bone mineral density) T-score (right)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+23295	Femur troch BMD (bone mineral density) (left)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+23214	Femur troch BMD (bone mineral density) (right)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+23298	Femur troch BMD (bone mineral density) T-score (left)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+23215	Femur troch BMD (bone mineral density) T-score (right)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+23292	Femur upper neck BMD (bone mineral density) (left)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+23216	Femur upper neck BMD (bone mineral density) (right)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+23296	Femur upper neck BMD (bone mineral density) T-score (left)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+23217	Femur upper neck BMD (bone mineral density) T-score (right)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+23297	Femur wards BMD (bone mineral density) (left)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+23218	Femur wards BMD (bone mineral density) (right)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+23301	Femur wards BMD (bone mineral density) T-score (left)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+23219	Femur wards BMD (bone mineral density) T-score (right)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+23306	Head BMC (bone mineral content)	3	<http://purl.obolibrary.org/obo/CMO_0001554>	bone mineral content
+23226	Head BMD (bone mineral density)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+23305	Head bone area	2	<http://purl.obolibrary.org/obo/CMO_0001681>	bone area measurement
+23203	L1-L4 BMC (bone mineral content)	3	<http://purl.obolibrary.org/obo/CMO_0001554>	bone mineral content
+23204	L1-L4 BMD (bone mineral density)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+23205	L1-L4 BMD (bone mineral density) T-score	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+23200	L1-L4 area	1	<http://purl.obolibrary.org/obo/CMO_0000214>	intramuscular fat area as percentage of skeletal muscle area
+23201	L1-L4 average height	1	N/A	N/A
+23202	L1-L4 average width	1	N/A	N/A
+23320	Leg BMC (bone mineral content) (left)	3	<http://purl.obolibrary.org/obo/CMO_0001554>	bone mineral content
+23228	Leg BMC (bone mineral content) (right)	3	<http://purl.obolibrary.org/obo/CMO_0001554>	bone mineral content
+23227	Leg BMD (bone mineral density) (left)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+23229	Leg BMD (bone mineral density) (right)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+23315	Leg bone area (left)	2	<http://purl.obolibrary.org/obo/CMO_0001681>	bone area measurement
+23316	Leg bone area (right)	2	<http://purl.obolibrary.org/obo/CMO_0001681>	bone area measurement
+23230	Legs BMC (bone mineral content)	3	<http://purl.obolibrary.org/obo/CMO_0001554>	bone mineral content
+23231	Legs BMD (bone mineral density)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+23318	Legs combined bone area	2	<http://purl.obolibrary.org/obo/CMO_0001681>	bone area measurement
+23308	Pelvis BMC (bone mineral content)	3	<http://purl.obolibrary.org/obo/CMO_0001554>	bone mineral content
+23232	Pelvis BMD (bone mineral density)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+23307	Pelvis bone area	2	<http://purl.obolibrary.org/obo/CMO_0001681>	bone area measurement
+23310	Ribs BMC (bone mineral content)	3	<http://purl.obolibrary.org/obo/CMO_0001554>	bone mineral content
+23233	Ribs BMD (bone mineral density)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+23309	Ribs bone area	2	<http://purl.obolibrary.org/obo/CMO_0001681>	bone area measurement
+23312	Spine BMC (bone mineral content)	3	<http://purl.obolibrary.org/obo/CMO_0001554>	bone mineral content
+23234	Spine BMD (bone mineral density)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+23311	Spine bone area	2	<http://purl.obolibrary.org/obo/CMO_0001681>	bone area measurement
+23235	Total BMC (bone mineral content)	3	<http://purl.obolibrary.org/obo/CMO_0001554>	bone mineral content
+23236	Total BMD (bone mineral density)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+23237	Total BMD (bone mineral density) (left)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+23238	Total BMD (bone mineral density) (right)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+23239	Total BMD (bone mineral density) T-score	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+23240	Trunk BMC (bone mineral content)	3	<http://purl.obolibrary.org/obo/CMO_0001554>	bone mineral content
+23241	Trunk BMD (bone mineral density)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+23242	Trunk BMD (bone mineral density) (left)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+23243	Trunk BMD (bone mineral density) (right)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+23304	Trunk bone area	2	<http://purl.obolibrary.org/obo/CMO_0001681>	bone area measurement
+3143	Ankle spacing width	1	N/A	N/A
+4100	Ankle spacing width (left)	1	N/A	N/A
+4119	Ankle spacing width (right)	1	N/A	N/A
+3085	Heel Broadband ultrasound attenuation (BUA), manual entry	0	N/A	N/A
+3144	Heel Broadband ultrasound attenuation, direct entry	1	N/A	N/A
+3148	Heel bone mineral density (BMD)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+4105	Heel bone mineral density (BMD) (left)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+4124	Heel bone mineral density (BMD) (right)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+78	Heel bone mineral density (BMD) T-score, automated	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+4106	Heel bone mineral density (BMD) T-score, automated (left)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+4125	Heel bone mineral density (BMD) T-score, automated (right)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+4138	Heel bone mineral density (BMD) T-score, manual entry (left)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+4143	Heel bone mineral density (BMD) T-score, manual entry (right)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+3084	Heel bone mineral density (BMD), manual entry	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+4140	Heel bone mineral density (BMD), manual entry (left)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+4145	Heel bone mineral density (BMD), manual entry (right)	3	<http://purl.obolibrary.org/obo/CMO_0001226>	bone mineral density
+77	Heel bone ultrasound T-score, manual entry	1	N/A	N/A
+4141	Heel broadband ultrasound attenuation (BUA), manual entry (left)	1	N/A	N/A
+4146	Heel broadband ultrasound attenuation (BUA), manual entry (right)	1	N/A	N/A
+4101	Heel broadband ultrasound attenuation (left)	1	N/A	N/A
+4120	Heel broadband ultrasound attenuation (right)	1	N/A	N/A
+3147	Heel quantitative ultrasound index (QUI), direct entry	1	N/A	N/A
+4104	Heel quantitative ultrasound index (QUI), direct entry (left)	1	N/A	N/A
+4123	Heel quantitative ultrasound index (QUI), direct entry (right)	1	N/A	N/A
+3083	Heel quantitative ultrasound index (QUI), manual entry	1	N/A	N/A
+4139	Heel quantitative ultrasound index (QUI), manual entry (left)	1	N/A	N/A
+4144	Heel quantitative ultrasound index (QUI), manual entry (right)	1	N/A	N/A
+40008	Age at cancer diagnosis	2	<http://purl.obolibrary.org/obo/CMO_0000390>	maternal age at first egg production
+22672	Maximum carotid IMT (intima-medial thickness) at 120 degrees	1	N/A	N/A
+22675	Maximum carotid IMT (intima-medial thickness) at 150 degrees	1	N/A	N/A
+22678	Maximum carotid IMT (intima-medial thickness) at 210 degrees	1	N/A	N/A
+22681	Maximum carotid IMT (intima-medial thickness) at 240 degrees	1	N/A	N/A
+22671	Mean carotid IMT (intima-medial thickness) at 120 degrees	1	N/A	N/A
+22674	Mean carotid IMT (intima-medial thickness) at 150 degrees	1	N/A	N/A
+22677	Mean carotid IMT (intima-medial thickness) at 210 degrees	1	N/A	N/A
+22680	Mean carotid IMT (intima-medial thickness) at 240 degrees	1	N/A	N/A
+22670	Minimum carotid IMT (intima-medial thickness) at 120 degrees	1	N/A	N/A
+22673	Minimum carotid IMT (intima-medial thickness) at 150 degrees	1	N/A	N/A
+22676	Minimum carotid IMT (intima-medial thickness) at 210 degrees	1	N/A	N/A
+22679	Minimum carotid IMT (intima-medial thickness) at 240 degrees	1	N/A	N/A
+40007	Age at death	2	<http://purl.obolibrary.org/obo/CMO_0000390>	maternal age at first egg production
+20022	Birth weight	1	<http://purl.obolibrary.org/obo/CMO_0000012>	body weight
+100022	Alcohol	0	N/A	N/A
+100004	Fat	1	<http://purl.obolibrary.org/obo/CMO_0000088>	abdominal fat pad weight
+100008	Total sugars	1	<http://purl.obolibrary.org/obo/CMO_0000051>	blood total cholesterol level
+20019	Speech-reception-threshold (SRT) estimate (left)	1	N/A	N/A
+20021	Speech-reception-threshold (SRT) estimate (right)	1	N/A	N/A
+23124	Arm fat mass (left)	2	<http://purl.obolibrary.org/obo/CMO_0000304>	fat mass index fmi
+23120	Arm fat mass (right)	2	<http://purl.obolibrary.org/obo/CMO_0000304>	fat mass index fmi
+23123	Arm fat percentage (left)	2	<http://purl.obolibrary.org/obo/CMO_0000226>	body fat percentage lukaski equation
+23119	Arm fat percentage (right)	2	<http://purl.obolibrary.org/obo/CMO_0000226>	body fat percentage lukaski equation
+23125	Arm fat-free mass (left)	1	N/A	N/A
+23121	Arm fat-free mass (right)	1	N/A	N/A
+23126	Arm predicted mass (left)	1	N/A	N/A
+23122	Arm predicted mass (right)	1	N/A	N/A
+23105	Basal metabolic rate	1	N/A	N/A
+23099	Body fat percentage	3	<http://purl.obolibrary.org/obo/CMO_0000226>	body fat percentage lukaski equation
+23104	Body mass index (BMI)	4	<http://purl.obolibrary.org/obo/CMO_0000105>	body mass index bmi
+23110	Impedance of arm (left)	1	N/A	N/A
+23109	Impedance of arm (right)	1	N/A	N/A
+23108	Impedance of leg (left)	1	N/A	N/A
+23107	Impedance of leg (right)	1	N/A	N/A
+23106	Impedance of whole body	2	<http://purl.obolibrary.org/obo/CMO_0000011>	whole body morphological measurement
+23116	Leg fat mass (left)	2	<http://purl.obolibrary.org/obo/CMO_0000304>	fat mass index fmi
+23112	Leg fat mass (right)	2	<http://purl.obolibrary.org/obo/CMO_0000304>	fat mass index fmi
+23115	Leg fat percentage (left)	2	<http://purl.obolibrary.org/obo/CMO_0000226>	body fat percentage lukaski equation
+23111	Leg fat percentage (right)	2	<http://purl.obolibrary.org/obo/CMO_0000226>	body fat percentage lukaski equation
+23117	Leg fat-free mass (left)	1	N/A	N/A
+23113	Leg fat-free mass (right)	1	N/A	N/A
+23118	Leg predicted mass (left)	1	N/A	N/A
+23114	Leg predicted mass (right)	1	N/A	N/A
+23128	Trunk fat mass	2	<http://purl.obolibrary.org/obo/CMO_0000304>	fat mass index fmi
+23127	Trunk fat percentage	2	<http://purl.obolibrary.org/obo/CMO_0000226>	body fat percentage lukaski equation
+23129	Trunk fat-free mass	1	N/A	N/A
+23130	Trunk predicted mass	1	N/A	N/A
+23098	Weight	1	<http://purl.obolibrary.org/obo/CMO_0000012>	body weight
+23100	Whole body fat mass	2	<http://purl.obolibrary.org/obo/CMO_0000011>	whole body morphological measurement
+23101	Whole body fat-free mass	2	<http://purl.obolibrary.org/obo/CMO_0000011>	whole body morphological measurement
+23102	Whole body water mass	2	<http://purl.obolibrary.org/obo/CMO_0000011>	whole body morphological measurement
+26416	Crime score (England)	1	N/A	N/A
+26434	Crime score (Scotland)	1	N/A	N/A
+26414	Education score (England)	1	N/A	N/A
+26431	Education score (Scotland)	1	N/A	N/A
+26421	Education score (Wales)	1	N/A	N/A
+26412	Employment score (England)	1	N/A	N/A
+26429	Employment score (Scotland)	1	N/A	N/A
+26419	Employment score (Wales)	1	N/A	N/A
+26413	Health score (England)	1	N/A	N/A
+26430	Health score (Scotland)	1	N/A	N/A
+26420	Health score (Wales)	1	N/A	N/A
+26411	Income score (England)	1	N/A	N/A
+26428	Income score (Scotland)	1	N/A	N/A
+26418	Income score (Wales)	1	N/A	N/A
+26410	Index of Multiple Deprivation (England)	2	N/A	N/A
+26427	Index of Multiple Deprivation (Scotland)	2	N/A	N/A
+26426	Index of Multiple Deprivation (Wales)	2	N/A	N/A
+5264	Corneal hysteresis (left)	1	N/A	N/A
+5256	Corneal hysteresis (right)	1	N/A	N/A
+5265	Corneal resistance factor (left)	1	N/A	N/A
+5257	Corneal resistance factor (right)	1	N/A	N/A
+5263	Intra-ocular pressure, Goldmann-correlated (left)	1	N/A	N/A
+5255	Intra-ocular pressure, Goldmann-correlated (right)	1	N/A	N/A
+5262	Intra-ocular pressure, corneal-compensated (left)	1	N/A	N/A
+5254	Intra-ocular pressure, corneal-compensated (right)	1	N/A	N/A
+22427	Body surface area	2	<http://purl.obolibrary.org/obo/CMO_0001761>	total surface area of liver occupied by tumorous lesions
+22425	Cardiac index	2	<http://purl.obolibrary.org/obo/CMO_0002881>	cardiac index
+22424	Cardiac output	2	<http://purl.obolibrary.org/obo/CMO_0000197>	cardiac output measurement
+22401	Liver inflammation factor (LIF)	1	N/A	N/A
+22400	Liver iron (Fe)	1	N/A	N/A
+22417	Liver iron corrected T1 (ct1)	1	N/A	N/A
+22402	Proton density fat fraction (PDFF)	1	N/A	N/A
+6365	Uncertainty in vocabulary level	1	N/A	N/A
+12702	Cardiac index during PWA	2	<http://purl.obolibrary.org/obo/CMO_0002881>	cardiac index
+12682	Cardiac output during PWA	2	<http://purl.obolibrary.org/obo/CMO_0000197>	cardiac output measurement
+12680	Central augmentation pressure during PWA	1	N/A	N/A
+12683	End systolic pressure during PWA	1	N/A	N/A
+12684	End systolic pressure index during PWA	1	N/A	N/A
+12679	Number of beats in waveform average for PWA	2	N/A	N/A
+12685	Total peripheral resistance during PWA	1	N/A	N/A
+90192	Temperature average	1	<http://purl.obolibrary.org/obo/CMO_0000015>	body temperature
+90195	Temperature maximum	1	<http://purl.obolibrary.org/obo/CMO_0000015>	body temperature
+90194	Temperature minimum	1	<http://purl.obolibrary.org/obo/CMO_0000015>	body temperature
+90193	Temperature standard deviation	1	N/A	N/A
+20162	Pack years adult smoking as proportion of life span exposed to smoking	1	N/A	N/A
+20161	Pack years of smoking	1	N/A	N/A
+20258	FEV1/ FVC ratio Z-score	1	N/A	N/A
+3063	Forced expiratory volume in 1-second (FEV1)	3	<http://purl.obolibrary.org/obo/CMO_0000241>	forced expiratory volume to forced vital capacity ratio
+10695	Forced expiratory volume in 1-second (FEV1) (pilot)	3	N/A	N/A
+20256	Forced expiratory volume in 1-second (FEV1) Z-score	3	N/A	N/A
+20150	Forced expiratory volume in 1-second (FEV1), Best measure	3	N/A	N/A
+20153	Forced expiratory volume in 1-second (FEV1), predicted	3	N/A	N/A
+20154	Forced expiratory volume in 1-second (FEV1), predicted percentage	3	N/A	N/A
+3062	Forced vital capacity (FVC)	4	<http://purl.obolibrary.org/obo/CMO_0000251>	forced vital capacity fvc
+10694	Forced vital capacity (FVC) (pilot)	4	<http://purl.obolibrary.org/obo/CMO_0000251>	forced vital capacity fvc
+20257	Forced vital capacity (FVC) Z-score	4	<http://purl.obolibrary.org/obo/CMO_0000251>	forced vital capacity fvc
+20151	Forced vital capacity (FVC), Best measure	4	<http://purl.obolibrary.org/obo/CMO_0000251>	forced vital capacity fvc
+30510	Creatinine (enzymatic) in urine	2	<http://purl.obolibrary.org/obo/CMO_0001634>	absolute change in urine norepinephrine level
+30500	Microalbumin in urine	2	<http://purl.obolibrary.org/obo/CMO_0001634>	absolute change in urine norepinephrine level
+30520	Potassium in urine	2	<http://purl.obolibrary.org/obo/CMO_0001634>	absolute change in urine norepinephrine level
+30530	Sodium in urine	2	<http://purl.obolibrary.org/obo/CMO_0001634>	absolute change in urine norepinephrine level
+20261	avMSE	0	N/A	N/A
+5208	logMAR, final (left)	1	N/A	N/A
+5201	logMAR, final (right)	1	N/A	N/A
+4429	Average monthly beer plus cider intake	1	N/A	N/A
+4418	Average monthly champagne plus white wine intake	1	N/A	N/A
+4451	Average monthly fortified wine intake	1	N/A	N/A
+4462	Average monthly intake of other alcoholic drinks	1	N/A	N/A
+4407	Average monthly red wine intake	1	N/A	N/A
+4440	Average monthly spirits intake	1	N/A	N/A
+1588	Average weekly beer plus cider intake	1	N/A	N/A
+1578	Average weekly champagne plus white wine intake	1	N/A	N/A
+1608	Average weekly fortified wine intake	1	N/A	N/A
+5364	Average weekly intake of other alcoholic drinks	1	N/A	N/A
+1568	Average weekly red wine intake	1	N/A	N/A
+1598	Average weekly spirits intake	1	N/A	N/A
+20410	Age when known person last commented about drinking habits	1	N/A	N/A
+20420	Longest period spent worried or anxious	1	N/A	N/A
+4194	Pulse rate	1	<http://purl.obolibrary.org/obo/CMO_0000002>	heart rate
+4196	Pulse wave peak to peak time	2	N/A	N/A
+4195	Pulse wave reflection index	1	N/A	N/A
+5111	3mm asymmetry angle (left)	1	N/A	N/A
+5108	3mm asymmetry angle (right)	1	N/A	N/A
+5112	3mm cylindrical power angle (left)	1	N/A	N/A
+5115	3mm cylindrical power angle (right)	1	N/A	N/A
+5292	3mm index of best keratometry results (left)	2	N/A	N/A
+5237	3mm index of best keratometry results (right)	2	N/A	N/A
+5104	3mm strong meridian angle (left)	1	N/A	N/A
+5107	3mm strong meridian angle (right)	1	N/A	N/A
+5103	3mm weak meridian angle (left)	1	N/A	N/A
+5100	3mm weak meridian angle (right)	1	N/A	N/A
+5110	6mm asymmetry angle (left)	1	N/A	N/A
+5109	6mm asymmetry angle (right)	1	N/A	N/A
+5113	6mm cylindrical power angle (left)	1	N/A	N/A
+5114	6mm cylindrical power angle (right)	1	N/A	N/A
+5306	6mm index of best keratometry results (left)	2	N/A	N/A
+5251	6mm index of best keratometry results (right)	2	N/A	N/A
+5105	6mm strong meridian angle (left)	1	N/A	N/A
+5106	6mm strong meridian angle (right)	1	N/A	N/A
+5102	6mm weak meridian angle (left)	1	N/A	N/A
+5101	6mm weak meridian angle (right)	1	N/A	N/A
+5089	Astigmatism angle (left)	1	N/A	N/A
+5088	Astigmatism angle (right)	1	N/A	N/A
+21022	Age at recruitment	2	<http://purl.obolibrary.org/obo/CMO_0000390>	maternal age at first egg production
+34	Year of birth	1	N/A	N/A
+4079	Diastolic blood pressure, automated reading	3	<http://purl.obolibrary.org/obo/CMO_0000005>	diastolic blood pressure
+94	Diastolic blood pressure, manual reading	3	<http://purl.obolibrary.org/obo/CMO_0000005>	diastolic blood pressure
+95	Pulse rate (during blood-pressure measurement)	1	N/A	N/A
+102	Pulse rate, automated reading	1	N/A	N/A
+4080	Systolic blood pressure, automated reading	3	<http://purl.obolibrary.org/obo/CMO_0000004>	systolic blood pressure
+93	Systolic blood pressure, manual reading	3	<http://purl.obolibrary.org/obo/CMO_0000004>	systolic blood pressure
+74	Fasting time	1	<http://purl.obolibrary.org/obo/CMO_0000207>	bleeding time bt
+23244	Android bone mass	1	N/A	N/A
+23245	Android fat mass	2	<http://purl.obolibrary.org/obo/CMO_0000304>	fat mass index fmi
+23246	Android lean mass	1	N/A	N/A
+23249	Arm fat mass (left)	2	<http://purl.obolibrary.org/obo/CMO_0000304>	fat mass index fmi
+23253	Arm fat mass (right)	2	<http://purl.obolibrary.org/obo/CMO_0000304>	fat mass index fmi
+23250	Arm lean mass (left)	1	N/A	N/A
+23254	Arm lean mass (right)	1	N/A	N/A
+23257	Arms fat mass	2	<http://purl.obolibrary.org/obo/CMO_0000304>	fat mass index fmi
+23258	Arms lean mass	1	N/A	N/A
+23261	Gynoid bone mass	1	N/A	N/A
+23262	Gynoid fat mass	2	<http://purl.obolibrary.org/obo/CMO_0000304>	fat mass index fmi
+23263	Gynoid lean mass	1	N/A	N/A
+23266	Leg fat mass (left)	2	<http://purl.obolibrary.org/obo/CMO_0000304>	fat mass index fmi
+23270	Leg fat mass (right)	2	<http://purl.obolibrary.org/obo/CMO_0000304>	fat mass index fmi
+23267	Leg lean mass (left)	1	N/A	N/A
+23271	Leg lean mass (right)	1	N/A	N/A
+23274	Legs fat mass	2	<http://purl.obolibrary.org/obo/CMO_0000304>	fat mass index fmi
+23275	Legs lean mass	1	N/A	N/A
+23278	Total fat mass	2	<http://purl.obolibrary.org/obo/CMO_0000304>	fat mass index fmi
+23279	Total fat-free mass	1	N/A	N/A
+23280	Total lean mass	1	N/A	N/A
+23282	Total tissue mass	1	N/A	N/A
+23284	Trunk fat mass	2	<http://purl.obolibrary.org/obo/CMO_0000304>	fat mass index fmi
+23285	Trunk lean mass	1	N/A	N/A
+23288	VAT (visceral adipose tissue) mass	2	N/A	N/A
+23289	VAT (visceral adipose tissue) volume	2	N/A	N/A
+12144	Height	1	<http://purl.obolibrary.org/obo/CMO_0000106>	body height
+12143	Weight (pre-imaging)	1	<http://purl.obolibrary.org/obo/CMO_0000012>	body weight
+40009	Reported occurrences of cancer	1	N/A	N/A
+20455	Age when last took cannabis	1	N/A	N/A
+20433	Age at first episode of depression	3	<http://purl.obolibrary.org/obo/CMO_0000390>	maternal age at first egg production
+20434	Age at last episode of depression	2	N/A	N/A
+20442	Lifetime number of depressed periods	2	N/A	N/A
+3680	Age when last ate meat	1	N/A	N/A
+1438	Bread intake	1	<http://purl.obolibrary.org/obo/CMO_0000427>	food intake rate
+1458	Cereal intake	1	<http://purl.obolibrary.org/obo/CMO_0000427>	food intake rate
+1498	Coffee intake	1	<http://purl.obolibrary.org/obo/CMO_0000427>	food intake rate
+1289	Cooked vegetable intake	1	N/A	N/A
+1319	Dried fruit intake	1	N/A	N/A
+1309	Fresh fruit intake	1	N/A	N/A
+1299	Salad / raw vegetable intake	1	N/A	N/A
+1488	Tea intake	1	<http://purl.obolibrary.org/obo/CMO_0000427>	food intake rate
+1528	Water intake	2	<http://purl.obolibrary.org/obo/CMO_0002859>	water intake drink rate to body weight ratio
+21044	Average number of times bowels opened per day	2	N/A	N/A
+21042	Greatest number of times bowels opened per day	2	N/A	N/A
+21043	Least number of times bowels opened per week	2	N/A	N/A
+21047	Number of weeks (in the last year) at work suffering because of IBS	2	N/A	N/A
+21045	Number of weeks absent from work due to IBS, in the last year	2	N/A	N/A
+130	Place of birth in UK - east co-ordinate	1	N/A	N/A
+129	Place of birth in UK - north co-ordinate	1	N/A	N/A
+22335	P axis	1	<http://purl.obolibrary.org/obo/CMO_0000263>	p wave amplitude
+12338	P duration	1	<http://purl.obolibrary.org/obo/CMO_0000263>	p wave amplitude
+22334	PP interval	2	<http://purl.obolibrary.org/obo/CMO_0000278>	pp interval
+22330	PQ interval	1	<http://purl.obolibrary.org/obo/CMO_0000232>	rr interval
+12340	QRS duration	2	<http://purl.obolibrary.org/obo/CMO_0000267>	qrs duration
+22338	QRS num	1	<http://purl.obolibrary.org/obo/CMO_0000267>	qrs duration
+22331	QT interval	2	<http://purl.obolibrary.org/obo/CMO_0000235>	qt interval
+22332	QTC interval	2	<http://purl.obolibrary.org/obo/CMO_0000269>	qtc interval
+22336	R axis	1	<http://purl.obolibrary.org/obo/CMO_0000270>	r wave amplitude
+22333	RR interval	2	<http://purl.obolibrary.org/obo/CMO_0000232>	rr interval
+22337	T axis	1	<http://purl.obolibrary.org/obo/CMO_0000110>	blood t lymphocyte count
+12336	Ventricular rate	1	<http://purl.obolibrary.org/obo/CMO_0000002>	heart rate
+5983	ECG, heart rate	2	<http://purl.obolibrary.org/obo/CMO_0000002>	heart rate
+5984	ECG, load	0	N/A	N/A
+5993	ECG, number of stages in a phase	2	N/A	N/A
+5992	ECG, phase duration	1	N/A	N/A
+5986	ECG, phase time	1	N/A	N/A
+5990	ECG, stage duration	1	N/A	N/A
+6033	Maximum heart rate during fitness test	2	N/A	N/A
+845	Age completed full time education	1	N/A	N/A
+20121	Cascot confidence score	1	N/A	N/A
+796	Distance between home and job workplace	1	N/A	N/A
+777	Frequency of travelling from home to job workplace	2	N/A	N/A
+757	Time employed in main current job	1	N/A	N/A
+22644	Consecutive night shifts during mixed shift periods	1	N/A	N/A
+22654	Consecutive night shifts during night shift periods	1	N/A	N/A
+22599	Number of jobs held	2	<http://purl.obolibrary.org/obo/CMO_0000960>	number of entries into a discrete space in an experimental apparatus
+22643	Number of night shifts worked monthly during mixed shift periods	2	N/A	N/A
+22653	Number of night shifts worked monthly during night shift periods	2	N/A	N/A
+22645	Rest days during mixed shift periods	1	N/A	N/A
+22655	Rest days during night shift periods	1	N/A	N/A
+22642	Usual length of each night shift during mixed shift periods	2	N/A	N/A
+22652	Usual length of each night shift during night shift periods	2	N/A	N/A
+22664	Year gap ended	1	N/A	N/A
+22663	Year gap started	1	N/A	N/A
+22603	Year job ended	0	N/A	N/A
+22602	Year job started	0	N/A	N/A
+22200	Year of birth	1	N/A	N/A
+4700	Age cataract diagnosed	1	N/A	N/A
+4689	Age glaucoma diagnosed	1	N/A	N/A
+5923	Age macular degeneration diagnosed	1	N/A	N/A
+5945	Age other serious eye condition diagnosed	1	N/A	N/A
+2217	Age started wearing glasses or contact lenses	1	N/A	N/A
+5901	Age when diabetes-related eye disease diagnosed	1	N/A	N/A
+5430	Age when loss of vision due to injury or trauma diagnosed	2	N/A	N/A
+2946	Father's age	1	<http://purl.obolibrary.org/obo/CMO_0000390>	maternal age at first egg production
+1807	Father's age at death	2	<http://purl.obolibrary.org/obo/CMO_0000390>	maternal age at first egg production
+1845	Mother's age	1	<http://purl.obolibrary.org/obo/CMO_0000390>	maternal age at first egg production
+3526	Mother's age at death	2	<http://purl.obolibrary.org/obo/CMO_0000390>	maternal age at first egg production
+3972	Number of adopted brothers	2	<http://purl.obolibrary.org/obo/CMO_0000960>	number of entries into a discrete space in an experimental apparatus
+3982	Number of adopted sisters	2	<http://purl.obolibrary.org/obo/CMO_0000960>	number of entries into a discrete space in an experimental apparatus
+1873	Number of full brothers	2	<http://purl.obolibrary.org/obo/CMO_0000960>	number of entries into a discrete space in an experimental apparatus
+1883	Number of full sisters	2	<http://purl.obolibrary.org/obo/CMO_0000960>	number of entries into a discrete space in an experimental apparatus
+5057	Number of older siblings	2	<http://purl.obolibrary.org/obo/CMO_0000960>	number of entries into a discrete space in an experimental apparatus
+3882	Age at bilateral oophorectomy (both ovaries removed)	2	N/A	N/A
+2754	Age at first live birth	3	<http://purl.obolibrary.org/obo/CMO_0000390>	maternal age at first egg production
+2824	Age at hysterectomy	2	<http://purl.obolibrary.org/obo/CMO_0000390>	maternal age at first egg production
+2764	Age at last live birth	2	N/A	N/A
+3581	Age at menopause (last menstrual period)	2	N/A	N/A
+3546	Age last used hormone-replacement therapy (HRT)	1	N/A	N/A
+3872	Age of primiparous women at birth of child	3	N/A	N/A
+3536	Age started hormone-replacement therapy (HRT)	1	N/A	N/A
+2794	Age started oral contraceptive pill	1	N/A	N/A
+2804	Age when last used oral contraceptive pill	1	N/A	N/A
+2714	Age when periods started (menarche)	1	N/A	N/A
+2744	Birth weight of first child	2	N/A	N/A
+3710	Length of menstrual cycle	2	<http://purl.obolibrary.org/obo/CMO_0001836>	length of intestine affected by colonic aganglionosis to total length of colon ratio
+2734	Number of live births	3	<http://purl.obolibrary.org/obo/CMO_0001932>	number of live offspring per litter
+3849	Number of pregnancy terminations	2	<http://purl.obolibrary.org/obo/CMO_0000960>	number of entries into a discrete space in an experimental apparatus
+3839	Number of spontaneous miscarriages	2	<http://purl.obolibrary.org/obo/CMO_0000960>	number of entries into a discrete space in an experimental apparatus
+3829	Number of stillbirths	2	<http://purl.obolibrary.org/obo/CMO_0000960>	number of entries into a discrete space in an experimental apparatus
+20016	Fluid intelligence score	1	N/A	N/A
+20191	Fluid intelligence score	1	N/A	N/A
+46	Hand grip strength (left)	1	N/A	N/A
+47	Hand grip strength (right)	1	N/A	N/A
+4230	Signal-to-noise-ratio (SNR) of triplet (left)	1	N/A	N/A
+4241	Signal-to-noise-ratio (SNR) of triplet (right)	1	N/A	N/A
+709	Number in household	1	N/A	N/A
+23039	CagA antigen for Helicobacter pylori	0	N/A	N/A
+22426	Average heart rate	2	<http://purl.obolibrary.org/obo/CMO_0000002>	heart rate
+22420	LV ejection fraction	2	<http://purl.obolibrary.org/obo/CMO_0000180>	ejection fraction
+22421	LV end diastolic volume	1	N/A	N/A
+22422	LV end systolic volume	1	N/A	N/A
+22423	LV stroke volume	2	<http://purl.obolibrary.org/obo/CMO_0000223>	stroke volume
+2405	Number of children fathered	2	<http://purl.obolibrary.org/obo/CMO_0000960>	number of entries into a discrete space in an experimental apparatus
+6333	Duration spent answering each puzzle	1	N/A	N/A
+6373	Number of puzzles correctly solved	2	N/A	N/A
+6374	Number of puzzles viewed	2	<http://purl.obolibrary.org/obo/CMO_0000960>	number of entries into a discrete space in an experimental apparatus
+3627	Age angina diagnosed	1	N/A	N/A
+3786	Age asthma diagnosed	1	N/A	N/A
+4012	Age deep-vein thrombosis (DVT, blood clot in leg) diagnosed	1	N/A	N/A
+2976	Age diabetes diagnosed	1	N/A	N/A
+3992	Age emphysema/chronic bronchitis diagnosed	1	N/A	N/A
+3761	Age hay fever, rhinitis or eczema diagnosed	1	N/A	N/A
+3894	Age heart attack diagnosed	1	N/A	N/A
+2966	Age high blood pressure diagnosed	2	N/A	N/A
+4022	Age pulmonary embolism (blood clot in lung) diagnosed	1	N/A	N/A
+4056	Age stroke diagnosed	1	N/A	N/A
+84	Cancer year/age first occurred	1	N/A	N/A
+87	Non-cancer illness year/age first occurred	1	N/A	N/A
+134	Number of self-reported cancers	2	<http://purl.obolibrary.org/obo/CMO_0000960>	number of entries into a discrete space in an experimental apparatus
+135	Number of self-reported non-cancer illnesses	2	N/A	N/A
+22150	Age COPD (Chronic Obstructive Pulmonary Disease) diagnosed by doctor	1	N/A	N/A
+22152	Age alpha-1 antitrypsin deficiency diagnosed by doctor	1	N/A	N/A
+22159	Age asbestosis diagnosed by doctor	1	N/A	N/A
+22147	Age asthma diagnosed by doctor	1	N/A	N/A
+22154	Age bronchiectasis diagnosed by doctor	1	N/A	N/A
+22149	Age chronic bronchitis diagnosed by doctor	1	N/A	N/A
+22151	Age cystic fibrosis diagnosed by doctor	1	N/A	N/A
+22148	Age emphysema diagnosed by doctor	1	N/A	N/A
+22156	Age fibrosing alveolitis/unspecified alveolitis diagnosed by doctor	1	N/A	N/A
+22146	Age hayfever or allergic rhinitis diagnosed by doctor	1	N/A	N/A
+22155	Age idiopathic pulmonary fibrosis diagnosed by doctor	1	N/A	N/A
+22160	Age lung cancer (not mesothelioma) diagnosed by doctor	1	N/A	N/A
+22161	Age mesothelioma of the lung diagnosed by doctor	2	N/A	N/A
+22507	Age of stopping smoking	2	<http://purl.obolibrary.org/obo/CMO_0000392>	age of puberty
+22153	Age sarcoidosis diagnosed by doctor	1	N/A	N/A
+22158	Age silicosis diagnosed by doctor	1	N/A	N/A
+22157	Age tuberculosis diagnosed by doctor	1	N/A	N/A
+22508	Amount of tobacco currently smoked	2	N/A	N/A
+22505	Years of bringing up phlegm/sputum/mucus on most days	1	N/A	N/A
+22503	Years of cough on most days	1	N/A	N/A
+6671	Number of antibiotics taken in last 3 months	2	N/A	N/A
+137	Number of treatments/medications taken	2	<http://purl.obolibrary.org/obo/CMO_0000960>	number of entries into a discrete space in an experimental apparatus
+4609	Longest period of depression	2	<http://purl.obolibrary.org/obo/CMO_0000932>	percentage of study population developing cerebrovascular lesions during a period of time
+5375	Longest period of unenthusiasm / disinterest	2	N/A	N/A
+20127	Neuroticism score	1	<http://purl.obolibrary.org/obo/CMO_0000793>	milk somatic cell score
+4620	Number of depression episodes	2	<http://purl.obolibrary.org/obo/CMO_0000960>	number of entries into a discrete space in an experimental apparatus
+5386	Number of unenthusiastic/disinterested episodes	2	<http://purl.obolibrary.org/obo/CMO_0000960>	number of entries into a discrete space in an experimental apparatus
+22033	Summed days activity	1	N/A	N/A
+22034	Summed minutes activity	1	N/A	N/A
+4282	Maximum digits remembered correctly	1	N/A	N/A
+20240	Maximum digits remembered correctly	1	N/A	N/A
+92	Operation year/age first occurred	1	N/A	N/A
+20197	Number of word pairs correctly associated	2	N/A	N/A
+396	Number of columns displayed in round	2	N/A	N/A
+398	Number of correct matches in round	2	N/A	N/A
+20131	Number of correct matches in round	2	N/A	N/A
+10136	Number of correct matches in round (pilot)	2	N/A	N/A
+399	Number of incorrect matches in round	2	N/A	N/A
+20132	Number of incorrect matches in round	2	N/A	N/A
+10137	Number of incorrect matches in round (pilot)	2	N/A	N/A
+397	Number of rows displayed in round	2	N/A	N/A
+894	Duration of moderate activity	2	<http://purl.obolibrary.org/obo/CMO_0001749>	duration of grooming in an experimental apparatus
+914	Duration of vigorous activity	2	<http://purl.obolibrary.org/obo/CMO_0001749>	duration of grooming in an experimental apparatus
+874	Duration of walks	2	<http://purl.obolibrary.org/obo/CMO_0001749>	duration of grooming in an experimental apparatus
+884	Number of days/week of moderate physical activity 10+ minutes	2	N/A	N/A
+904	Number of days/week of vigorous physical activity 10+ minutes	2	N/A	N/A
+864	Number of days/week walked 10+ minutes	2	N/A	N/A
+1090	Time spent driving	2	<http://purl.obolibrary.org/obo/CMO_0000958>	amount of experiment time spent in a discrete space in an experimental apparatus
+1080	Time spent using computer	2	<http://purl.obolibrary.org/obo/CMO_0000958>	amount of experiment time spent in a discrete space in an experimental apparatus
+1070	Time spent watching television (TV)	2	N/A	N/A
+4291	Number of attempts	2	<http://purl.obolibrary.org/obo/CMO_0000960>	number of entries into a discrete space in an experimental apparatus
+12678	Central pulse pressure during PWA	2	N/A	N/A
+12677	Central systolic blood pressure during PWA	3	<http://purl.obolibrary.org/obo/CMO_0000004>	systolic blood pressure
+12698	Diastolic brachial blood pressure	2	<http://purl.obolibrary.org/obo/CMO_0000003>	blood pressure measurement
+12675	Diastolic brachial blood pressure during PWA	2	N/A	N/A
+12673	Heart rate during PWA	2	<http://purl.obolibrary.org/obo/CMO_0000002>	heart rate
+12687	Mean arterial pressure during PWA	2	N/A	N/A
+12676	Peripheral pulse pressure during PWA	2	N/A	N/A
+12686	Stroke volume during PWA	2	<http://purl.obolibrary.org/obo/CMO_0000223>	stroke volume
+12697	Systolic brachial blood pressure	2	<http://purl.obolibrary.org/obo/CMO_0000003>	blood pressure measurement
+12674	Systolic brachial blood pressure during PWA	2	N/A	N/A
+404	Duration to first press of snap-button in each round	2	N/A	N/A
+10147	Duration to first press of snap-button in each round (pilot)	2	N/A	N/A
+20023	Mean time to correctly identify matches	2	N/A	N/A
+21003	Age when attended assessment centre	1	N/A	N/A
+2139	Age first had sexual intercourse	1	N/A	N/A
+3669	Lifetime number of same-sex sexual partners	2	N/A	N/A
+2149	Lifetime number of sexual partners	2	N/A	N/A
+1160	Sleep duration	1	<http://purl.obolibrary.org/obo/CMO_0000264>	p wave duration
+3436	Age started smoking in current smokers	1	N/A	N/A
+2867	Age started smoking in former smokers	1	N/A	N/A
+2897	Age stopped smoking	1	N/A	N/A
+6194	Age stopped smoking cigarettes (current cigar/pipe or previous cigarette smoker)	1	N/A	N/A
+1269	Exposure to tobacco smoke at home	1	N/A	N/A
+1279	Exposure to tobacco smoke outside home	1	N/A	N/A
+3456	Number of cigarettes currently smoked daily (current cigarette smokers)	2	N/A	N/A
+2887	Number of cigarettes previously smoked daily	2	N/A	N/A
+6183	Number of cigarettes previously smoked daily (current cigar/pipe smokers)	2	N/A	N/A
+2926	Number of unsuccessful stop-smoking attempts	2	N/A	N/A
+3064	Peak expiratory flow (PEF)	1	N/A	N/A
+10696	Peak expiratory flow (PEF) (pilot)	1	N/A	N/A
+41235	Spells in hospital	1	N/A	N/A
+41284	Baby birth weight	1	N/A	N/A
+41275	Duration of antenatal stay	2	<http://purl.obolibrary.org/obo/CMO_0001749>	duration of grooming in an experimental apparatus
+41285	Duration of postnatal stay	2	<http://purl.obolibrary.org/obo/CMO_0001749>	duration of grooming in an experimental apparatus
+41269	Gestation period at first antenatal assessment	2	N/A	N/A
+41286	Mother age on date of delivery	1	N/A	N/A
+41276	Number of weeks of gestation	2	N/A	N/A
+1737	Childhood sunburn occasions	0	N/A	N/A
+2277	Frequency of solarium/sunlamp use	2	<http://purl.obolibrary.org/obo/CMO_0001218>	frequency of pancreatic islet insulin release oscillations
+1050	Time spend outdoors in summer	1	N/A	N/A
+1060	Time spent outdoors in winter	2	N/A	N/A
+20230	Duration to entering value	1	N/A	N/A
+6313	Duration to entering selection	1	N/A	N/A
+6350	Duration to complete alphanumeric path (trail #2)	1	N/A	N/A
+6348	Duration to complete numeric path (trail #1)	1	N/A	N/A
+6771	Errors before selecting correct item in alphanumeric path (trail #2)	1	N/A	N/A
+20148	Errors before selecting correct item in alphanumeric path (trail #2)	1	N/A	N/A
+6770	Errors before selecting correct item in numeric path (trail #1)	1	N/A	N/A
+20147	Errors before selecting correct item in numeric path (trail #1)	1	N/A	N/A
+6773	Interval between previous point and current one in alphanumeric path (trail #2)	2	N/A	N/A
+20155	Interval between previous point and current one in alphanumeric path (trail #2)	2	N/A	N/A
+6772	Interval between previous point and current one in numeric path (trail #1)	2	N/A	N/A
+20149	Interval between previous point and current one in numeric path (trail #1)	2	N/A	N/A
+6351	Total errors traversing alphanumeric path (trail #2)	1	N/A	N/A
+20248	Total errors traversing alphanumeric path (trail #2)	1	N/A	N/A
+6349	Total errors traversing numeric path (trail #1)	1	N/A	N/A
+20247	Total errors traversing numeric path (trail #1)	1	N/A	N/A
+20461	Age when first had unusual or psychotic experience	1	N/A	N/A
+20470	Number of times believed in an un-real conspiracy against self	2	N/A	N/A
+20476	Number of times believed in un-real communications or signs	2	N/A	N/A
+20465	Number of times heard an un-real voice	2	N/A	N/A
+20473	Number of times seen an un-real vision	2	N/A	N/A
+22501	Year ended full time education	1	N/A	N/A
