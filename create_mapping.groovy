@@ -105,7 +105,7 @@ ukb_traits.each { t ->
     }
   }
 
-  if(bestMatch.count != 0 && bestMatch.count/mText.split(' ').size() >= 0.5 || mText.indexOf('bmd') != -1) {
+  if(bestMatch.count != 0 && bestMatch.count/mText.split(' ').size() >= 0.5 || mText.indexOf('bmd') != -1 || mText.indexOf('lean muscle') != -1 || mText.split(' ').size() < 3) {
     output += "\n$t.id\t$t.description\t$bestMatch.count\t$bestMatch.iri\t$bestMatch.firstLabel"
   } else {
     output += "\n$t.id\t$t.description\t$bestMatch.count\tN/A\tN/A"
