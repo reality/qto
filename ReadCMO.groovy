@@ -137,6 +137,8 @@ cmolabels.eachParallel { cl, lab ->
 def cCount = 0
 def aCount = 0
 
+// TODO steal axioms from HP
+
 cmo.getClassesInSignature(true).each { k ->
   v = cmo2uberon[k]
   v.each { cl ->
