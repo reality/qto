@@ -534,6 +534,30 @@ ukb.findAll { id, t -> t.category == 'medical conditions' }
     mapping[id] = newIri
   }
 
+def liverMeas = factory.getOWLClass(IRI.create("http://purl.obolibrary.org/obo/CMO_0001064"))
+ukb.findAll { id, t -> t.category == 'liver mri' }
+  .each { id, t ->
+    if(mapping[id]) { return; }
+    def newIri = ecmoPrefix + (++ecmoCounter)
+    addClass(newIri, t.label, liverMeas) 
+    mapping[id] = newIri
+  }
+
+mapping['22424'] = 'http://purl.obolibrary.org/obo/CMO_0000197'
+def lvMorph = factory.getOWLClass(IRI.create("http://purl.obolibrary.org/obo/CMO_0000951"))
+ukb.findAll { id, t -> t.category == 'left ventricular size and function' }
+  .each { id, t ->
+    if(mapping[id]) { return; }
+    if(t.label =~ 'volume') {
+      def newIri = ecmoPrefix + (++ecmoCounter)
+      addClass(newIri, t.label, lvMorph) 
+      mapping[id] = newIri
+    } else {
+      println t
+    }
+  }
+
+
 def c = 0
 def groups = [:]
 ukb.each { id, t ->
