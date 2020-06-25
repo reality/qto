@@ -130,15 +130,24 @@ ukb.findAll { id, t -> t.category == 'alcohol' || t.category == 'alcohol use' }
      mapping[id] = newIri
    }
 
+def consumption = factory.getOWLClass(IRI.create("http://purl.obolibrary.org/obo/CMO_0000426"))
+def nutrition = addClass(ecmoPrefix + (++ecmoCounter), "nutrition intake measurement", consumption)
+ukb.findAll { id, t -> t.category == 'estimated nutrients yesterday' }
+  .each { id, t ->
+    t.label += ' intake yesterday'
+    if(t.label =~ 'alcohol') {
+     def newIri = ecmoPrefix + (++ecmoCounter)
+     addClass(newIri, t.label, alcoholParentClass) 
+     mapping[id] = newIri
+    } else {
+     def newIri = ecmoPrefix + (++ecmoCounter)
+     addClass(newIri, t.label, nutrition) 
+     mapping[id] = newIri
+    }
+  }
+
 println "mapping size: (${mapping.size()}/${ukb.size()})"
 
-def refracMeasure = addClass(ecmoPrefix + (++ecmoCounter), "ocular autorefraction measurement", cMeasureClass)
-ukb.findAll { id, t -> t.category == 'autorefraction' }
-  .each { id, t ->
-    def newIri = ecmoPrefix + (++ecmoCounter)
-    addClass(newIri, t.label, refracMeasure) 
-    mapping[id] = newIri
-  }
 
 println "mapping size: (${mapping.size()}/${ukb.size()})"
 
@@ -279,6 +288,13 @@ ukb.findAll { id, t -> t.category == 'female-specific factors' }
     mapping[id] = newIri
   }
 
+ukb.findAll { id, t -> t.category == 'sexual factors' || t.category == 'male-specific factors' }
+  .each { id, t ->
+    if(mapping[id]) { return; }
+    def newIri = ecmoPrefix + (++ecmoCounter)
+    addClass(newIri, t.label, reproMeas) 
+    mapping[id] = newIri
+  }
 println "mapping size: (${mapping.size()}/${ukb.size()})"
 
 
@@ -359,7 +375,7 @@ ukb.findAll { id, t -> t.category == 'pairs matching' }
     addClass(newIri, t.label, pairsMeas) 
     mapping[id] = newIri
   }
-ukb.findAll { id, t -> t.category == 'reaction time' || t.category == 'tower rearranging' || t.category == 'fluid intelligence / reasoning' || t.category == 'symbol digit substitution' || t.category == 'matrix pattern completion' || t.category == 'numeric memory' || t.category == 'paired associate learning' }
+ukb.findAll { id, t -> t.category == 'reaction time' || t.category == 'tower rearranging' || t.category == 'fluid intelligence / reasoning' || t.category == 'symbol digit substitution' || t.category == 'matrix pattern completion' || t.category == 'numeric memory' || t.category == 'paired associate learning' || t.category == 'prospective memory' || t.category == 'picture vocabulary' }
   .each { id, t ->
     def newIri = ecmoPrefix + (++ecmoCounter)
     addClass(newIri, t.label, cogMeas) 
@@ -367,7 +383,7 @@ ukb.findAll { id, t -> t.category == 'reaction time' || t.category == 'tower rea
   }
 
 def empHistory = addClass(ecmoPrefix + (++ecmoCounter), "employment history measurement", cMeasureClass)
-ukb.findAll { id, t -> t.category == 'employment history' || t.category == 'employment' }
+ukb.findAll { id, t -> t.category == 'employment history' || t.category == 'employment' || t.category == 'work environment' }
   .each { id, t ->
     def newIri = ecmoPrefix + (++ecmoCounter)
     addClass(newIri, t.label, empHistory) 
@@ -407,7 +423,7 @@ ukb.findAll { id, t -> t.category == 'diet' }
   }
 
 def physMeas = addClass(ecmoPrefix + (++ecmoCounter), "physical activity measurement", cMeasureClass)
-ukb.findAll { id, t -> t.category == 'physical activity' }
+ukb.findAll { id, t -> t.category == 'physical activity' || t.category == 'met scores' }
   .each { id, t ->
     def newIri = ecmoPrefix + (++ecmoCounter)
     addClass(newIri, t.label, physMeas) 
@@ -438,7 +454,20 @@ ukb.findAll { id, t -> t.category == 'intraocular pressure' }
       mapping[id] = newIri
     }
   }
+ukb.findAll { id, t -> t.category == 'visual acuity' }
+  .each { id, t ->
+    def newIri = ecmoPrefix + (++ecmoCounter)
+    addClass(newIri, t.label, ocularMeas) 
+    mapping[id] = newIri
+  }
 
+def refracMeasure = addClass(ecmoPrefix + (++ecmoCounter), "ocular autorefraction measurement", ocularMeas)
+ukb.findAll { id, t -> t.category == 'autorefraction' }
+  .each { id, t ->
+    def newIri = ecmoPrefix + (++ecmoCounter)
+    addClass(newIri, t.label, refracMeasure) 
+    mapping[id] = newIri
+  }
 
 def cardiacOutput = factory.getOWLClass(IRI.create("http://purl.obolibrary.org/obo/CMO_0000197"))
 def calcBlood = factory.getOWLClass(IRI.create("http://purl.obolibrary.org/obo/CMO_0000008"))
@@ -483,7 +512,7 @@ ukb.findAll { id, t -> t.category =~ 'ecg' }
   }
  
 def maternityMeas = addClass(ecmoPrefix + (++ecmoCounter), "maternity measurement", cMeasureClass)
-ukb.findAll { id, t -> t.category =~ 'summary maternity' }
+ukb.findAll { id, t -> t.category =~ 'summary maternity' || t.category == 'early life factors' }
   .each { id, t ->
     if(mapping[id]) { return; }
     def newIri = ecmoPrefix + (++ecmoCounter)
@@ -557,6 +586,53 @@ ukb.findAll { id, t -> t.category == 'left ventricular size and function' }
     }
   }
 
+def hearMeas = addClass(ecmoPrefix + (++ecmoCounter), "hearing measurement", cMeasureClass)
+ukb.findAll { id, t -> t.category == 'hearing test' }
+  .each { id, t ->
+    if(mapping[id]) { return; }
+    def newIri = ecmoPrefix + (++ecmoCounter)
+    addClass(newIri, t.label, hearMeas) 
+    mapping[id] = newIri
+  }
+
+def treatMeas = addClass(ecmoPrefix + (++ecmoCounter), "treatment measurement", cMeasureClass)
+ukb.findAll { id, t -> t.category == 'medications' }
+  .each { id, t ->
+    if(mapping[id]) { return; }
+    def newIri = ecmoPrefix + (++ecmoCounter)
+    addClass(newIri, t.label, treatMeas) 
+    mapping[id] = newIri
+  }
+
+
+def handGrip = addClass(ecmoPrefix + (++ecmoCounter), "grip strength measurement", muscleMeas)
+ukb.findAll { id, t -> t.category == 'hand grip strength' }
+  .each { id, t ->
+    if(mapping[id]) { return; }
+    def newIri = ecmoPrefix + (++ecmoCounter)
+    addClass(newIri, t.label, handGrip) 
+    mapping[id] = newIri
+  }
+
+def demMeas = addClass(ecmoPrefix + (++ecmoCounter), "demographic measurement", cMeasureClass)
+ukb.findAll { id, t -> t.category == 'summary administration' || t.category == 'baseline characteristics' || t.category == 'reception' || t.category == 'operations' || t.category == 'household' || t.category == 'eyesight' || t.category == 'education' || t.category == 'cancer register' || t.category == 'death register' }
+  .each { id, t ->
+    if(mapping[id]) { return; }
+    def newIri = ecmoPrefix + (++ecmoCounter)
+    addClass(newIri, t.label, demMeas) 
+    mapping[id] = newIri
+  }
+
+def sleepMeas = addClass(ecmoPrefix + (++ecmoCounter), "sleep measurement", cMeasureClass)
+ukb.findAll { id, t -> t.category == 'sleep' }
+  .each { id, t ->
+    if(mapping[id]) { return; }
+    def newIri = ecmoPrefix + (++ecmoCounter)
+    addClass(newIri, t.label, sleepMeas) 
+    mapping[id] = newIri
+  }
+
+// TODO note we probably want to overwrite the urinalysis ones ...
 
 def c = 0
 def groups = [:]
