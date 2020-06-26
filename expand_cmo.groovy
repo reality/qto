@@ -282,7 +282,7 @@ mapping['2754'] = "http://purl.obolibrary.org/obo/CMO_0002510"
 
 ukb.findAll { id, t -> t.category == 'female-specific factors' }
   .each { id, t ->
-    if(mapping[id]) { return; }
+    //if(mapping[id]) { return; }
     def newIri = ecmoPrefix + (++ecmoCounter)
     addClass(newIri, t.label, femMeas) 
     mapping[id] = newIri
@@ -415,7 +415,7 @@ ukb.findAll { id, t -> t.category == 'carotid ultrasound' }
   }
 
 def foodMeas = factory.getOWLClass(IRI.create("http://purl.obolibrary.org/obo/CMO_0000772"))
-ukb.findAll { id, t -> t.category == 'diet' }
+ukb.findAll { id, t -> t.category == 'diet' || t.category == 'blood sample collection' }
   .each { id, t ->
     def newIri = ecmoPrefix + (++ecmoCounter)
     addClass(newIri, t.label, foodMeas) 
@@ -471,9 +471,9 @@ ukb.findAll { id, t -> t.category == 'autorefraction' }
 
 def cardiacOutput = factory.getOWLClass(IRI.create("http://purl.obolibrary.org/obo/CMO_0000197"))
 def calcBlood = factory.getOWLClass(IRI.create("http://purl.obolibrary.org/obo/CMO_0000008"))
-ukb.findAll { id, t -> t.category == 'pulse wave analysis' }
+ukb.findAll { id, t -> t.category == 'pulse wave analysis' || t.category == 'arterial stiffness' }
   .each { id, t ->
-    if(mapping[id]) { return; }
+    if(mapping[id] && t.label != 'pulse wave peak to peak time' && t.label != 'pulse wave reflection index') { return; }
     if(t.label =~ 'cardiac output') {
       def newIri = ecmoPrefix + (++ecmoCounter)
       addClass(newIri, t.label, cardiacOutput) 
@@ -576,7 +576,7 @@ mapping['22424'] = 'http://purl.obolibrary.org/obo/CMO_0000197'
 def lvMorph = factory.getOWLClass(IRI.create("http://purl.obolibrary.org/obo/CMO_0000951"))
 ukb.findAll { id, t -> t.category == 'left ventricular size and function' }
   .each { id, t ->
-    if(mapping[id]) { return; }
+    //if(mapping[id]) { return; }
     if(t.label =~ 'volume') {
       def newIri = ecmoPrefix + (++ecmoCounter)
       addClass(newIri, t.label, lvMorph) 
@@ -632,7 +632,55 @@ ukb.findAll { id, t -> t.category == 'sleep' }
     mapping[id] = newIri
   }
 
+ukb.findAll { id, t -> t.category == 'urine assays' }
+  .each { id, t ->
+    /*if(mapping[id]) { return; }
+    def newIri = ecmoPrefix + (++ecmoCounter)
+    addClass(newIri, t.label, ) 
+    mapping[id] = newIri*/
+    println t
+  }
+
 // TODO note we probably want to overwrite the urinalysis ones ...
+mapping['30510'] = 'http://purl.obolibrary.org/obo/CMO_0000125'
+mapping['30520'] = 'http://purl.obolibrary.org/obo/CMO_0000128'
+mapping['30530'] = 'http://purl.obolibrary.org/obo/CMO_0000129'
+def urineMeas = factory.getOWLClass(IRI.create("http://purl.obolibrary.org/obo/CMO_0000256"))
+def newIri = ecmoPrefix + (++ecmoCounter)
+addClass(newIri, ukb['30500'].label, urineMeas) 
+mapping['30500'] = newIri
+
+mapping['4194'] = 'http://purl.obolibrary.org/obo/CMO_0000294'
+mapping['95'] = 'http://purl.obolibrary.org/obo/CMO_0000294'
+mapping['102'] = 'http://purl.obolibrary.org/obo/CMO_0000294'
+
+ukb.each { id, t ->
+  if(!mapping[id]) {
+    mapping[id] = "NONE"
+  }
+}
+
+def out = 'ukb id\tukb label\tecmo iri\tecmo label'
+
+mapping.each { id, iri ->
+  def label
+  def c = factory.getOWLClass(IRI.create(iri))
+  def o
+  if(iri =~ "/CMO_") {
+    o = cmo
+  } else {
+    o = ont
+  }
+
+  EntitySearcher.getAnnotations(c, o, factory.getRDFSLabel()).each { a ->
+    def val = a.getValue()
+    if(val) { label = val.getLiteral() }
+  }
+
+  out += "\n$id\t${ukb[id].label}\t$iri\t$label"
+}
+
+new File('map.tsv').text = out
 
 def c = 0
 def groups = [:]
