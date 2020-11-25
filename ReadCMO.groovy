@@ -80,12 +80,14 @@ def labelMap = { ont ->
 def manager = OWLManager.createOWLOntologyManager()
 fac = manager.getOWLDataFactory()
 
-def ont = manager.createOntology(IRI.create("http://biohackathon.org/covid19/cmo-ext.owl"))
-
-def cmo = manager.loadOntologyFromOntologyDocument(new File("inputs/cmo.owl"))
+def ont = manager.loadOntologyFromOntologyDocument(new File("../ECMO/ecmo.owl"))
 def uberon = manager.loadOntologyFromOntologyDocument(new File("inputs/uberon.owl"))
 def chebi = manager.loadOntologyFromOntologyDocument(new File("inputs/chebi.owl"))
 def pato = manager.loadOntologyFromOntologyDocument(new File("inputs/pato.owl"))
+def hp = manager.loadOntologyFromOntologyDocument(new File("inputs/hp.owl"))
+def mp = manager.loadOntologyFromOntologyDocument(new File("inputs/mp.owl"))
+
+def amount = fac.getOWLClass(IRI.create("http://purl.obolibrary.org/obo/PATO_0000070"))
 
 // ConsoleProgressMonitor progressMonitor = new ConsoleProgressMonitor()
 // OWLReasonerConfiguration config = new SimpleConfiguration(progressMonitor)
@@ -95,7 +97,7 @@ def pato = manager.loadOntologyFromOntologyDocument(new File("inputs/pato.owl"))
 // def chebireasoner = f1.createReasoner(chebi,config)
 // def patoreasoner = f1.createReasoner(pato,config)
 
-def cmolabels = labelMap(cmo)
+def cmolabels = labelMap(ont)
 def uberonlabels = labelMap(uberon)
 def chebilabels = labelMap(chebi)
 def patolabels = labelMap(pato)
@@ -139,7 +141,7 @@ def aCount = 0
 
 // TODO steal axioms from HP
 
-cmo.getClassesInSignature(true).each { k ->
+ont.getClassesInSignature(true).each { k ->
   v = cmo2uberon[k]
   v.each { cl ->
     manager.addAxiom(ont, subclass(k, some(r("has-part"), and(c("quality"), some(r("inheres-in-part-of"), cl)))))
@@ -153,7 +155,13 @@ cmo.getClassesInSignature(true).each { k ->
     }
   }
 
-  if(cmo2uberon[k].size() > 0 || (cmo2uberon[k].size() > 0 && cmo2pato[k].size() > 0)) {
+  // TODO: not really sure whether 'amount is really appropriate here, but let's see.
+  vz = cmo2chebi[k]
+  vz.each { cc ->
+    manager.addAxiom(ont, equiv(k, some(r('has-part'), and(amount, some(r("inheres-in"), cc)))))
+  }
+
+  if(cmo2uberon[k].size() > 0 || (cmo2uberon[k].size() > 0 && cmo2pato[k].size() > 0) || cmo2chebi[k].size() > 0) {
     aCount++
   }
   cCount++
@@ -163,8 +171,7 @@ manager.applyChange(new AddImport(ont, fac.getOWLImportsDeclaration(IRI.create("
 manager.applyChange(new AddImport(ont, fac.getOWLImportsDeclaration(IRI.create("http://purl.obolibrary.org/obo/pato.owl"))))
 manager.applyChange(new AddImport(ont, fac.getOWLImportsDeclaration(IRI.create("http://purl.obolibrary.org/obo/uberon.owl"))))
 manager.applyChange(new AddImport(ont, fac.getOWLImportsDeclaration(IRI.create("http://purl.obolibrary.org/obo/chebi.owl"))))
-manager.applyChange(new AddImport(ont, fac.getOWLImportsDeclaration(IRI.create("http://purl.obolibrary.org/obo/cmo.owl"))))
 
-manager.saveOntology(ont, IRI.create(new File("qt.owl").toURI()))
+manager.saveOntology(ont, IRI.create(new File("ecmo_axiomatised.owl").toURI()))
 
 println "Done. Coverage ($aCount/$cCount)"
