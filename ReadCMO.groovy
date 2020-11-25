@@ -84,8 +84,8 @@ def ont = manager.loadOntologyFromOntologyDocument(new File("../ECMO/ecmo.owl"))
 def uberon = manager.loadOntologyFromOntologyDocument(new File("inputs/uberon.owl"))
 def chebi = manager.loadOntologyFromOntologyDocument(new File("inputs/chebi.owl"))
 def pato = manager.loadOntologyFromOntologyDocument(new File("inputs/pato.owl"))
-def hp = manager.loadOntologyFromOntologyDocument(new File("inputs/hp.owl"))
-def mp = manager.loadOntologyFromOntologyDocument(new File("inputs/mp.owl"))
+//def hp = manager.loadOntologyFromOntologyDocument(new File("inputs/hp.owl"))
+//def mp = manager.loadOntologyFromOntologyDocument(new File("inputs/mp.owl"))
 
 def amount = fac.getOWLClass(IRI.create("http://purl.obolibrary.org/obo/PATO_0000070"))
 
@@ -106,9 +106,11 @@ def cmo2other = [:].withDefault { new LinkedHashSet() }
 def cmo2uberon = [:].withDefault { new LinkedHashSet() }
 def cmo2pato = [:].withDefault { new LinkedHashSet() }
 def cmo2chebi = [:].withDefault { new LinkedHashSet() }
+def levelClasses = []
 
 GParsPool.withPool(6) {
 cmolabels.eachParallel { cl, lab ->
+  if(lab =~ 'level$') { levelClasses << cl }
   uberonlabels.each { k, v ->
     v = Pattern.quote(v)
     if(lab=~/(^|\s)${v}($|\s)/) {
@@ -157,11 +159,16 @@ ont.getClassesInSignature(true).each { k ->
 
   // TODO: not really sure whether 'amount is really appropriate here, but let's see.
   vz = cmo2chebi[k]
-  vz.each { cc ->
-    manager.addAxiom(ont, equiv(k, some(r('has-part'), and(amount, some(r("inheres-in"), cc)))))
+  if(levelClasses.contains(k) && v1.unique(false).size() == 1) { // size == 1 to stop the kidney to blah ratio
+    println 'ye'
+    vz.each { cc ->
+      v1.each { c2 ->
+        manager.addAxiom(ont, equiv(k, some(r('has-part'), and(amount, some(r("inheres-in"), and(cc, some(r("part-of"), c2)))))))
+    }
+      }
   }
 
-  if(cmo2uberon[k].size() > 0 || (cmo2uberon[k].size() > 0 && cmo2pato[k].size() > 0) || cmo2chebi[k].size() > 0) {
+  if(cmo2uberon[k].size() > 0 || (cmo2uberon[k].size() > 0 && cmo2pato[k].size() > 0) || (cmo2chebi[k].size() > 0 && levelClasses.contains(k))) {
     aCount++
   }
   cCount++
